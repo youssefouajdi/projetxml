@@ -1,0 +1,52 @@
+
+    <?xml encoding="UTF-8"?>
+    
+    <!ELEMENT cv (entete,Formations,stages,competences,langues,loisirs)>
+    
+    <!ELEMENT entete (nom,prenom,dateDeNaisssance,nationalite,telephone,mail)>
+    
+    <!ELEMENT Formations (diplome)+>
+    
+    <!ELEMENT stages (stage)+>
+    
+    <!ELEMENT competences (competence)+>
+    
+    <!ELEMENT langues (langue)+>
+    
+    <!ELEMENT loisirs (loisir)+>
+    
+    <!ELEMENT nom (#CDATA) >
+    
+    <!ELEMENT prenom (#CDATA)>
+    
+    <!ELEMENT dateDeNaisssance (#CDATA)>
+    
+    <!ELEMENT nationalite (#CDATA)>
+    
+    <!ELEMENT telephone EMPTY (#CDATA)>
+    
+    <!ELEMENT mail EMPTY (#CDATA)>
+    
+    <!ELEMENT diplome (annee,intitule)>
+    
+    <!ELEMENT stage (date,titre,description)>
+    
+    <!ELEMENT competence (titre,description)>
+    
+    <!ELEMENT langue (intitule,niveau)>
+    
+    <!ELEMENT loisir EMPTY (#CDATA)>
+    
+    <!ELEMENT annee EMPTY (#CDATA)>
+    
+    <!ELEMENT date EMPTY (#CDATA)>
+    
+    <!ELEMENT niveau EMPTY (#CDATA)>
+    
+    <!ELEMENT intitule EMPTY (#CDATA)>
+    
+    <!ELEMENT titre EMPTY (#CDATA)>
+    
+    <!ELEMENT description EMPTY (#CDATA)>
+    
+    
