@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:element name="cv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:entete"/>
+        <xs:element ref="cv:Formations"/>
+        <xs:element ref="cv:stages"/>
+        <xs:element ref="cv:competences"/>
+        <xs:element ref="cv:langues"/>
+        <xs:element ref="cv:loisirs"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="entete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:nom"/>
+        <xs:element ref="cv:prenom" />
+        <xs:element ref="cv:dateDeNaisssance" />
+        <xs:element ref="cv:nationalite"/>
+        <xs:element ref="cv:telephone"/>
+        <xs:element ref="cv:mail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nom">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="prenom">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="dateDeNaisssance">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="nationalite">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="telephone">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="mail">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="Formations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:diplome"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="diplome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:annee"/>
+        <xs:element ref="cv:intitule"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="annee">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="stages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="cv:stage"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:date"/>
+        <xs:element ref="cv:titre"/>
+        <xs:element ref="cv:description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="competences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element  ref="cv:competence"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="competence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:titre" />
+        <xs:element  ref="cv:description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="langues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:langue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="langue" type = "xs:string">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:intitule"/>
+        <xs:element ref="cv:niveau"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="niveau" type="xs:decimal">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="loisirs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cv:loisir"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loisir" type = "xs:string">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="intitule" type = "xs:string">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="titre" type = "xs:string">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="description" type = "xs:string">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>
+
